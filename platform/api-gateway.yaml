@@ -9,6 +9,11 @@ spring:
               predicates:
                 - Path=/api/v1/tools/**
 
+            - id: user-service
+              uri: lb://USER-SERVICE
+              predicates:
+                - Path=/api/v1/users/**
+
           default-filters:
             - PreserveHostHeader
 
