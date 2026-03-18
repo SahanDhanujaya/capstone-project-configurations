@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: tool-inventory-service
+              uri: lb://TOOL-INVENTORY-SERVICE
+              predicates:
+                - Path=/api/v1/tools/**
+
+          default-filters:
+            - PreserveHostHeader
+
+          globalcors:
+            cors-configurations:
+              '[/**]':
+                allowedOrigins: "*"
+                allowed-methods: "*"
+                allowed-headers: "*"
+server:
+  port: 7000
