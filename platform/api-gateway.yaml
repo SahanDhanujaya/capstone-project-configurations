@@ -19,4 +19,4 @@ spring:
                 allowed-methods: "*"
                 allowed-headers: "*"
 server:
-  port: 7001
+  port: 7000
