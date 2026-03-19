@@ -3,12 +3,10 @@ spring:
     problemdetails:
       enabled: true
 
-  data: # Ensure 'data' is included for Spring Boot 3.x/4.x
-    mongodb:
-      uri: mongodb://sahandhanujaya18:nR9xBKSBahjwjMGS@ac-ga34wnr-shard-00-00.e1dqwi1.mongodb.net:27017,ac-ga34wnr-shard-00-01.e1dqwi1.mongodb.net:27017,ac-ga34wnr-shard-00-02.e1dqwi1.mongodb.net:27017/borrow_db?replicaSet=atlas-p39acd-shard-0&ssl=true&authSource=admin
-      database: borrow_db
+  mongodb:
+    uri: mongodb://sahandhanujaya18:nR9xBKSBahjwjMGS@ac-ga34wnr-shard-00-00.e1dqwi1.mongodb.net:27017,ac-ga34wnr-shard-00-01.e1dqwi1.mongodb.net:27017,ac-ga34wnr-shard-00-02.e1dqwi1.mongodb.net:27017/?replicaSet=atlas-p39acd-shard-0&ssl=true&authSource=admin
+    database: borrow_db
 
-  # This stops Actuator from crashing when it can't "ping" the admin/local DBs
 management:
   health:
     mongo:
