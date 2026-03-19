@@ -1,8 +1,7 @@
 spring:
-  mvc:
-    problemdetails:
-      enabled: true
-
+  cloud:
+    config:
+      enabled: false  # Disables fetching from port 9000
   data:
     mongodb:
       uri: mongodb+srv://sahandhanujaya18:nR9xBKSBahjwjMGS@cluster-erp.e1dqwi1.mongodb.net/borrow_db?retryWrites=true&w=majority
