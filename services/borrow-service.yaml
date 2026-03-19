@@ -4,7 +4,7 @@ spring:
       enabled: true
 
   mongodb:
-    uri: mongodb://sahandhanujaya18:nR9xBKSBahjwjMGS@ac-ga34wnr-shard-00-00.e1dqwi1.mongodb.net:27017,ac-ga34wnr-shard-00-01.e1dqwi1.mongodb.net:27017,ac-ga34wnr-shard-00-02.e1dqwi1.mongodb.net:27017/?replicaSet=atlas-p39acd-shard-0&ssl=true&authSource=admin
+    uri: mongodb+srv://sahandhanujaya18:nR9xBKSBahjwjMGS@cluster-erp.e1dqwi1.mongodb.net/?appName=Cluster-erp
     database: borrow_db
 
 management:
