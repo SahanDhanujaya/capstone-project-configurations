@@ -15,7 +15,7 @@ spring:
                 - Path=/api/v1/users/**
 
             - id: borrow-service
-              uri: lb://BORROW-SERVICE
+              uri: lb://borrow-service  # Ensure this matches spring.application.name
               predicates:
                 - Path=/api/v1/borrows/**
 
