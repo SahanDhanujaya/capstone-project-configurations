@@ -5,12 +5,12 @@ spring:
 
   mongodb:
     uri: mongodb://sahandhanujaya18:nR9xBKSBahjwjMGS@ac-ga34wnr-shard-00-00.e1dqwi1.mongodb.net:27017,ac-ga34wnr-shard-00-01.e1dqwi1.mongodb.net:27017,ac-ga34wnr-shard-00-02.e1dqwi1.mongodb.net:27017/?replicaSet=atlas-p39acd-shard-0&ssl=true&authSource=admin
-    database: borrow_db
+    database: borrows
 
 management:
   health:
     mongo:
-      enabled: false  # Keeps Actuator from failing on Atlas-restricted commands
+      enabled: false
 
 server:
   port: 0
