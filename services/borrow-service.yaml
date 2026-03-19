@@ -3,12 +3,11 @@ spring:
     problemdetails:
       enabled: true
 
-  spring:
-    data:
-      mongodb:
+  data:
+    mongodb:
         # Ensure you include /borrow_db in the URI
-        uri: mongodb+srv://sahandhanujaya18:nR9xBKSBahjwjMGS@cluster-erp.e1dqwi1.mongodb.net/borrows?retryWrites=true&w=majority&appName=Cluster-erp
-        database: borrows
+      uri: mongodb+srv://sahandhanujaya18:nR9xBKSBahjwjMGS@cluster-erp.e1dqwi1.mongodb.net/borrows?retryWrites=true&w=majority&appName=Cluster-erp
+      database: borrows
 
   management:
     health:
