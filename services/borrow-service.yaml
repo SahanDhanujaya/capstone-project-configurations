@@ -3,8 +3,9 @@ spring:
     problemdetails:
       enabled: true
 
-  mongodb:
-    uri: mongodb+srv://sahandhanujaya18:nR9xBKSBahjwjMGS@cluster-erp.e1dqwi1.mongodb.net/borrow_db?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
+  data:
+    mongodb:
+      uri: mongodb+srv://sahandhanujaya18:nR9xBKSBahjwjMGS@cluster-erp.e1dqwi1.mongodb.net/borrow_db?retryWrites=true&w=majority
 
 server:
   port: 0
