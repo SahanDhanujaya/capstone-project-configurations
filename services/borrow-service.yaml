@@ -8,11 +8,6 @@ spring:
       uri: mongodb+srv://sahandhanujaya18:nR9xBKSBahjwjMGS@cluster-erp.e1dqwi1.mongodb.net/
       database: borrows
 
-  management:
-    health:
-      mongo:
-        enabled: false  # This is the critical fix for Atlas
-
 management:
   health:
     mongo:
