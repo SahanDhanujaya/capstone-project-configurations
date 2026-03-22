@@ -22,7 +22,7 @@ spring:
             - id: borrow-tool-service
               uri: lb://BORROW-TOOL-SERVICE
               predicates:
-                - path=/api/v1/borrow-tool/**
+                - Path=/api/v1/borrow-tool/**
 
           default-filters:
             - PreserveHostHeader
