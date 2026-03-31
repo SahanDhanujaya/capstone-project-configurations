@@ -1,0 +1,24 @@
+spring:
+  mvc:
+    problemdetails:
+      enabled: true
+  
+  mongodb:
+    host: localhost
+    port: 27017
+    database: borrow_tool
+    username: root
+    password: mongodb
+    authentication-database: admin
+
+management:
+  health:
+    mongo:
+      enabled: false
+
+server:
+  port: 0
+
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${random.value}

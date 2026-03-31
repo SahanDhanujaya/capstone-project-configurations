@@ -4,12 +4,7 @@ spring:
       enabled: true
   
   mongodb:
-    host: localhost
-    port: 27017
-    database: borrow_tool
-    username: root
-    password: mongodb
-    authentication-database: admin
+    uri: mongodb://root:yiGsiK486AwpCsXNXsAmADxKhf9sj2vM9OdBKjmE5D18LVt1@14f8c1d6-0d49-490b-a81d-79c237e12366.asia-southeast1.firestore.goog:443/mongodb-instance?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
 
 management:
   health:
